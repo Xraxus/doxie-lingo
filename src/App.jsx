@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="container">
       <Header />
-      <Chatbox>abc</Chatbox>
+      <Chatbox />
     </div>
   );
 }

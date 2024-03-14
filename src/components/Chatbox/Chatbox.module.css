@@ -1,14 +1,16 @@
 .chatbox {
-  border: 3px solid #252f42;
+  width: min(100%, 768px);
+  border: 3px solid #252f4299;
   padding: 1em;
-  border-radius: 0.9375rem;
-  margin: 1em;
+  margin: 1.75em auto 0.75em;
 }
 
+/* MessagesList */
 .messagesList {
   display: flex;
   flex-flow: column nowrap;
   gap: 1em;
+  overflow: auto;
 }
 
 .message {
@@ -28,3 +30,49 @@
   color: white;
   align-self: flex-start;
 }
+
+/* UserInput */
+.userInput {
+  display: flex;
+  gap: 0.25em;
+  margin: 1em auto;
+  width: min(100%, 500px);
+  border: 1px solid #252f4299;
+  padding: 0.25em;
+}
+
+.userInput textarea {
+  resize: none;
+  font-family: inherit;
+  font-size: 1.1rem;
+  width: min(100%, 450px);
+  padding: 0.3em 0.5em;
+  height: 5rem;
+  border: 0;
+  transition: background-color 300ms;
+}
+
+.userInput textarea:active,
+.userInput textarea:hover,
+.userInput textarea:focus {
+  background-color: #eee;
+  outline: 0;
+}
+
+.userInput button {
+  color: #f89315;
+  border: 0;
+  background-color: #fff;
+  transition: background-color 200ms;
+  font-size: 1.25rem;
+  font-weight: 500;
+  width: 2em;
+}
+
+.userInput button:hover,
+.userInput button:active {
+  background-color: #f3f3f3;
+  outline: 0;
+}
+
+/* LanguageSelection */
