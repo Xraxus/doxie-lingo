@@ -1,11 +1,11 @@
+import Chatbox from "./components/Chatbox/Chatbox";
 import Header from "./components/Header/Header";
 
 function App() {
-  const API_KEY = import.meta.env.VITE_API_KEY;
-
   return (
     <div className="container">
       <Header />
+      <Chatbox>abc</Chatbox>
     </div>
   );
 }
