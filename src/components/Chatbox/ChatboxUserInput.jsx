@@ -1,18 +1,18 @@
 import styles from "./Chatbox.module.css";
 import OpenAI from "openai";
-import { useContext, useId } from "react";
+import { v4 as uuidv4 } from "uuid";
+import { useContext } from "react";
 import { ChatContext } from "./Chatbox";
 
 export default function ChatboxUserInput() {
   const { userMessage, setChatLog, selectedLanguage, setUserMessage } =
     useContext(ChatContext);
   const API_KEY = import.meta.env.VITE_API_KEY;
-  const nextMessageId = useId();
 
   function addUserMessage() {
     setChatLog((prevChatLog) =>
       prevChatLog.concat({
-        id: nextMessageId,
+        id: uuidv4(),
         role: "user",
         content: userMessage,
       })
@@ -44,7 +44,6 @@ export default function ChatboxUserInput() {
       ],
     });
 
-    console.log(response);
     setChatLog((prevChatLog) =>
       prevChatLog.concat({
         id: response.id,
