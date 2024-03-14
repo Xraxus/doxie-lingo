@@ -36,10 +36,7 @@ export default function ChatboxUserInput() {
         },
         {
           role: "user",
-          content: `Translate text below, separated by ### to ${selectedLanguage}.
-          ###
-          ${userMessage}
-          ###`,
+          content: `Translate to ${selectedLanguage}: ${userMessage}`,
         },
       ],
     });
