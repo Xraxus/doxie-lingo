@@ -1,9 +1,10 @@
 .container {
   color: white;
   background-image: url("../../assets/worldmap.png");
-  backdrop-filter: grayscale(100%);
+  background-color: #0d182e;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 50%;
   display: flex;
   gap: 0 1.5em;
   justify-content: center;
@@ -20,7 +21,7 @@
 
 .container p {
   margin-top: 0.2em;
-  font-size: 1.15rem;
+  font-size: 1.25rem;
 }
 
 .logo {

@@ -1,6 +1,30 @@
-.chatbox{
-  border: 3px solid #252F42;
+.chatbox {
+  border: 3px solid #252f42;
   padding: 1em;
-  border-radius: 15px;
+  border-radius: 0.9375rem;
   margin: 1em;
+}
+
+.messagesList {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1em;
+}
+
+.message {
+  background-color: #f89315;
+  width: fit-content;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.5em 1em 0.75em;
+  border-radius: 10px 10px 2px 10px;
+  align-self: flex-end;
+  margin: 0;
+}
+
+.assistantMessage {
+  border-radius: 10px 10px 10px 2px;
+  background-color: #035a9d;
+  color: white;
+  align-self: flex-start;
 }
