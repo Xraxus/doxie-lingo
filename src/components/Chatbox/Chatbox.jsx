@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 
 import styles from "./Chatbox.module.css";
 
@@ -9,6 +9,7 @@ import ChatboxLanguageSelection from "./ChatboxLanguageSelection";
 export const ChatContext = createContext();
 
 export default function Chatbox() {
+  const [warning, setWarning] = useState("");
   const [selectedLanguage, setSelectedLanguage] = useState("spanish");
   const [userMessage, setUserMessage] = useState("");
   const [chatLog, setChatLog] = useState([
@@ -20,8 +21,19 @@ export default function Chatbox() {
     },
   ]);
 
+  useEffect(() => {
+    if (warning) {
+      const timerId = setTimeout(() => {
+        setWarning("");
+      }, 5000);
+
+      return () => clearTimeout(timerId);
+    }
+  }, [warning]);
+
   return (
     <div className={styles.chatbox}>
+      {warning && <p className={styles.warning}>{warning}</p>}
       <ChatContext.Provider
         value={{
           chatLog,
@@ -30,6 +42,8 @@ export default function Chatbox() {
           setSelectedLanguage,
           userMessage,
           setUserMessage,
+          warning,
+          setWarning,
         }}
       >
         <ChatboxMessagesList />
