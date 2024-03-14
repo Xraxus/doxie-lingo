@@ -9,7 +9,7 @@ export default function ChatboxMessagesList() {
     <p
       key={message.id}
       className={`${styles.message} ${
-        message.role === "assistant" && styles.assistantMessage
+        message.role === "assistant" ? styles.assistantMessage : ""
       }`}
     >
       {message.content}

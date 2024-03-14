@@ -4,11 +4,12 @@ import styles from "./Chatbox.module.css";
 
 import ChatboxMessagesList from "./ChatboxMessagesList";
 import ChatboxUserInput from "./ChatboxUserInput";
+import ChatboxLanguageSelection from "./ChatboxLanguageSelection";
 
 export const ChatContext = createContext();
 
 export default function Chatbox() {
-  const [selectedLanguage, setSelectedLanguage] = useState("Spanish");
+  const [selectedLanguage, setSelectedLanguage] = useState("spanish");
   const [userMessage, setUserMessage] = useState("");
   const [chatLog, setChatLog] = useState([
     {
@@ -33,8 +34,8 @@ export default function Chatbox() {
       >
         <ChatboxMessagesList />
         <ChatboxUserInput />
+        <ChatboxLanguageSelection />
       </ChatContext.Provider>
-      {/* <button onClick={sendTranslationRequest}>send</button> */}
     </div>
   );
 }

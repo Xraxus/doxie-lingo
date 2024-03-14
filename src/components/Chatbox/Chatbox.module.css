@@ -76,3 +76,21 @@
 }
 
 /* LanguageSelection */
+.languagesContainer {
+  width: fit-content;
+  margin: 1em auto;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1em;
+}
+
+.languagesContainer button {
+  background-color: black;
+  padding: 0;
+  line-height: 0;
+  border: 1px solid black;
+}
+
+.activeLanguage {
+  outline: 3px solid #035a9d;
+}
