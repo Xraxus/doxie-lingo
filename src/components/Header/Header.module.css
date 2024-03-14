@@ -1,0 +1,28 @@
+.container {
+  color: white;
+  background-image: url("../../assets/worldmap.png");
+  backdrop-filter: grayscale(100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  gap: 0 1.5em;
+  justify-content: center;
+  align-items: center;
+  padding: 3em 0;
+  font-weight: 600;
+}
+
+.container h1 {
+  color: #f89315;
+  margin-bottom: 0;
+  font-size: 2.5rem;
+}
+
+.container p {
+  margin-top: 0.2em;
+  font-size: 1.15rem;
+}
+
+.logo {
+  max-height: 130px;
+}

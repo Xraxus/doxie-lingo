@@ -1,10 +1,13 @@
-import { useState } from "react";
+import Header from "./components/Header/Header";
 
 function App() {
   const API_KEY = import.meta.env.VITE_API_KEY;
 
-  console.log(API_KEY);
-  return <></>;
+  return (
+    <div className="container">
+      <Header />
+    </div>
+  );
 }
 
 export default App;
