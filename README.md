@@ -47,5 +47,5 @@ This project is open source.
 
 ### Contact Information
 
-(LinkedIn)[https://www.linkedin.com/in/kamil-kobylarz1/]
-(GitHub)[https://github.com/Xraxus/]
+[LinkedIn](https://www.linkedin.com/in/kamil-kobylarz1/)
+[GitHub](https://github.com/Xraxus/)
