@@ -39,7 +39,7 @@ export default function ChatboxUserInput() {
       setChatLog((prevChatLog) =>
         prevChatLog.concat({
           id: uuidv4(),
-          role: "server",
+          role: "assistant",
           content: translatedMessage,
         })
       );
