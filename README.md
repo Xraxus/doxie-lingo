@@ -16,27 +16,20 @@ Translate text using AI, by chatting with a Dachshund Pollyglot! Made with React
 
 ### Installation Instructions
 
-1. Clone the repository:
-git clone https://github.com/your-username/doxielingo.git
-cd doxielingo
-
-~~Local - vite (using main branch)
+Local - vite (using main branch)
+1. Clone the repository
 2. Install dependencies
 3. Set up VITE_API_KEY in .env file located at the root of project directory
 4. Launch using 'npm run dev'
 
-~~Using netlify (netlifyDeploy branch)
-
-2. Connect the repository to Netlify CLI.
-3. Install dependencies
-4. Set up environment variables (`OPENAI_API_KEY`) in netlify environmental variables settings.
-~~
-
-5. Usage: Engage in conversation with the Dachshund Pollyglot to translate text seamlessly.
+Using netlify (netlifyDeploy branch)
+1. Clone the repository
+2. Connect the repository to Netlify.
+3. Make sure to set up environment variables (`OPENAI_API_KEY`) in netlify environmental variables settings.
 
 ### Future Improvements
 
-More languages!
+More languages! (Mostly UI changes)
 
 ### Contributing
 
@@ -51,6 +44,7 @@ Contributions are encouraged!
 ### License
 
 This project is open source.
+
 ### Contact Information
 
 (LinkedIn)[https://www.linkedin.com/in/kamil-kobylarz1/]
