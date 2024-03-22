@@ -1,6 +1,9 @@
 ## DoxieLingo
 
 Translate text using AI, by chatting with a Dachshund Pollyglot!
+
+[Check out here!](https://doxielingo.netlify.app/)
+
 ---
 
 ### Project Description
